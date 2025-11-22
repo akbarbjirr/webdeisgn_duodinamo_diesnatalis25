@@ -1,0 +1,50 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aboutBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8F5E9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C8E6C9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#aboutBg)"/>
+  
+  <!-- People/Team -->
+  <g id="person1" transform="translate(60, 80)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="20" fill="#FDB4A6"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="35" rx="18" ry="25" fill="#4CAF50"/>
+    <!-- Arms -->
+    <line x1="-18" y1="30" x2="-40" y2="20" stroke="#FDB4A6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="18" y1="30" x2="40" y2="20" stroke="#FDB4A6" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <g id="person2" transform="translate(200, 60)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="22" fill="#FDB4A6"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="38" rx="20" ry="28" fill="#66BB6A"/>
+    <!-- Arms -->
+    <line x1="-20" y1="32" x2="-45" y2="15" stroke="#FDB4A6" stroke-width="7" stroke-linecap="round"/>
+    <line x1="20" y1="32" x2="45" y2="15" stroke="#FDB4A6" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  
+  <g id="person3" transform="translate(320, 85)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="19" fill="#FDB4A6"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="33" rx="17" ry="24" fill="#388E3C"/>
+    <!-- Arms -->
+    <line x1="-17" y1="28" x2="-38" y2="22" stroke="#FDB4A6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="17" y1="28" x2="38" y2="22" stroke="#FDB4A6" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Handshake symbol -->
+  <g id="hearts" transform="translate(200, 200)">
+    <circle cx="-25" cy="0" r="8" fill="#FF6B6B" opacity="0.7"/>
+    <circle cx="0" cy="0" r="8" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="25" cy="0" r="8" fill="#FF6B6B" opacity="0.7"/>
+  </g>
+  
+  <!-- Unity message -->
+  <text x="200" y="260" font-size="14" fill="#2E7D32" text-anchor="middle" font-weight="bold">Bersama untuk Bumi</text>
+</svg>
