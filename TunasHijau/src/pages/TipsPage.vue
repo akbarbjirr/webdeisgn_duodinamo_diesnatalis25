@@ -7,7 +7,7 @@
       </div>
     </section>
 
-    <section class="tips-container" ref="tipsContainer">
+    <section class="tips-container">
       <div class="container">
         <!-- Tips Categories -->
         <div class="category-tabs">
@@ -51,8 +51,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+import { ref, computed } from 'vue'
 import TipCard from '@/components/ui/TipCard.vue'
 
 interface Tip {
@@ -233,18 +232,6 @@ const filteredTips = computed(() => {
     return tips
   }
   return tips.filter(tip => tip.category === selectedCategory.value)
-})
-
-const tipsContainer = ref<HTMLElement | null>(null)
-const route = useRoute()
-
-// Scroll ke tips container ketika page di-load dengan query parameter
-onMounted(() => {
-  if (route.query.scroll === 'tips' && tipsContainer.value) {
-    setTimeout(() => {
-      tipsContainer.value?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }, 100)
-  }
 })
 </script>
 
