@@ -88,19 +88,20 @@ const upcomingEvents = computed(() => appStore.upcomingEvents.slice(0, 3))
 }
 
 .hero {
-  background: linear-gradient(135deg, rgba(27,94,32,0.8) 0%, rgba(46,125,50,0.8) 100%), url('/images/hero-bg.jpg');
+  background: linear-gradient(135deg, rgba(27,94,32,0.85) 0%, rgba(46,125,50,0.85) 100%), url('/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: white;
-  padding: 8rem 2rem;
+  padding: 6rem 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-  min-height: 500px;
+  min-height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 12px;
 }
 
 .hero::before {
@@ -121,24 +122,25 @@ const upcomingEvents = computed(() => appStore.upcomingEvents.slice(0, 3))
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
   font-weight: 800;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   line-height: 1.2;
   animation: fadeInDown 0.8s ease-out 0.2s both;
-  text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .hero-content p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-bottom: 2.5rem;
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
   animation: fadeInUp 0.8s ease-out 0.4s both;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+  font-weight: 300;
 }
 
 .cta-button {
@@ -199,22 +201,23 @@ const upcomingEvents = computed(() => appStore.upcomingEvents.slice(0, 3))
 .features h2 {
   text-align: center;
   margin-bottom: 3rem;
-  font-size: 2.5rem;
-  color: #2e7d32;
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  font-weight: 700;
 }
 
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .feature-card {
   background: white;
   padding: 2.5rem 2rem;
-  border-radius: 14px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(16,24,40,0.08);
+  box-shadow: var(--shadow-sm);
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   border: 2px solid transparent;
   animation: slideUpFade 0.6s ease-out both;
@@ -235,55 +238,51 @@ const upcomingEvents = computed(() => appStore.upcomingEvents.slice(0, 3))
 
 .feature-card:hover {
   transform: translateY(-12px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(46,125,50,0.15);
+  box-shadow: var(--shadow-lg);
   border-color: rgba(46,125,50,0.2);
 }
 
-.feature-card:active {
-  transform: translateY(-8px) scale(1.01);
-}
-
 .feature-card h3 {
-  color: #1b5e20;
+  color: var(--color-primary);
   margin-bottom: 1rem;
-  font-size: 1.4rem;
-  font-weight: 800;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .feature-card p {
-  color: #666;
+  color: var(--color-text-secondary);
   line-height: 1.6;
   font-size: 0.95rem;
 }
 
 .upcoming-events {
-  padding: 5rem 2rem;
-  background: white;
+  padding: 4rem 2rem;
+  background: #fafafa;
+  border-radius: 12px;
+  margin: 2rem 0;
 }
 
 .upcoming-events > .container > h2 {
   text-align: center;
-  margin-bottom: 4rem;
-  font-size: 2.8rem;
-  color: #1b5e20;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  animation: fadeIn 0.6s ease-out;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  font-weight: 700;
 }
 
 .quick-tips {
-  padding: 5rem 2rem;
-  background: linear-gradient(to bottom, rgba(200,230,201,0.3) 0%, rgba(232,245,233,0.5) 100%);
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(46,125,50,0.05) 0%, rgba(102,187,106,0.05) 100%);
+  border-radius: 12px;
+  margin: 2rem 0;
 }
 
 .quick-tips h2 {
   text-align: center;
-  margin-bottom: 4rem;
-  font-size: 2.8rem;
-  color: #1b5e20;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  animation: fadeIn 0.6s ease-out;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  font-weight: 700;
 }
 
 .tips-preview {

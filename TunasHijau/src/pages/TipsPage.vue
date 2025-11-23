@@ -367,15 +367,15 @@ const filteredTips = computed(() => {
 }
 
 .fact-number {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 800;
-  color: #2e7d32;
+  color: var(--color-primary-light);
   margin-bottom: 0.5rem;
 }
 
 .fact-text {
-  color: #666;
-  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
   line-height: 1.6;
 }
 
