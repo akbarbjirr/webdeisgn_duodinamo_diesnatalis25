@@ -33,3 +33,36 @@ a,
     padding: 0 2rem;
   }
 }
+
+/* Text animation utilities */
+@keyframes fadeInText {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUpText {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.text-fade {
+  animation: fadeInText 600ms cubic-bezier(.22,.9,.34,1) both;
+}
+
+.text-slide-up {
+  animation: slideUpText 700ms cubic-bezier(.22,.9,.34,1) both;
+}
+
+/* stagger support: set --delay on element */
+.text-stagger {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: fadeInText 600ms cubic-bezier(.22,.9,.34,1) both;
+  animation-delay: var(--delay, 0ms);
+}
+
+.text-highlight {
+  background: linear-gradient(90deg,#2e7d32,#66bb6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -2,8 +2,8 @@
   <div class="home-page">
     <section class="hero">
       <div class="hero-content">
-        <h1>Selamat Datang di Tunas Hijau</h1>
-        <p>Mari bersama-sama menjaga dan melestarikan lingkungan untuk masa depan yang lebih baik</p>
+        <h1 class="text-slide-up">Selamat Datang di Tunas Hijau</h1>
+        <p class="text-fade">Mari bersama menjaga dan melestarikan lingkungan demi masa depan yang lebih baik.</p>
       </div>
     </section>
 
@@ -34,7 +34,7 @@
       </div>
     </section>
 
-    <!-- Quick Tips Section -->
+   
     <section class="quick-tips">
       <div class="container">
         <h2>Tips Ramah Lingkungan</h2>

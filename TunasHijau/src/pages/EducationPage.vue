@@ -2,8 +2,8 @@
   <div class="education-page">
     <section class="edu-hero">
       <div class="hero-content">
-        <h1>Pusat Edukasi Lingkungan</h1>
-        <p>Pelajari lebih dalam tentang isu-isu lingkungan global dan solusinya</p>
+        <h1 class="text-slide-up">Pusat Edukasi Lingkungan</h1>
+        <p class="text-fade">Pelajari isu lingkungan, penyebab, dampak, dan langkah-langkah praktis untuk bertindak dan beradaptasi.</p>
       </div>
     </section>
 

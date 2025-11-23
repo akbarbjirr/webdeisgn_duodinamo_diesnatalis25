@@ -2,8 +2,8 @@
   <div class="about-page">
     <div class="container">
       <section class="about-hero">
-        <h1>Tentang Tunas Hijau</h1>
-        <p>Organisasi peduli lingkungan yang berfokus pada pelestarian alam dan edukasi lingkungan</p>
+        <h1 class="text-slide-up">Tentang Tunas Hijau</h1>
+        <p class="text-fade">Organisasi peduli lingkungan yang berfokus pada pelestarian alam, edukasi, dan aksi nyata di lapangan.</p>
       </section>
 
       <section class="about-content">
@@ -21,7 +21,7 @@
             </ul>
           </div>
           <div class="about-image">
-            <img src="/images/about.svg" alt="About Tunas Hijau" />
+            <img src="/images/about.jpg" alt="About Tunas Hijau" />
           </div>
         </div>
       </section>
@@ -117,6 +117,10 @@
 
 .about-image img {
   width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 14px;
   box-shadow: 0 12px 30px rgba(46,125,50,0.15);
   transition: transform 0.3s ease, filter 0.3s ease;

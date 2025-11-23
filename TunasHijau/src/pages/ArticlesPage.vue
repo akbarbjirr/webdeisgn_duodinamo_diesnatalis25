@@ -2,8 +2,8 @@
   <div class="articles-page">
     <div class="container">
       <section class="articles-header">
-        <h1>Artikel Lingkungan</h1>
-        <p>Informasi dan tips tentang pelestarian lingkungan</p>
+        <h1 class="text-slide-up">Artikel Lingkungan</h1>
+        <p class="text-fade">Kumpulan artikel, analisis, dan panduan praktis untuk pelestarian lingkungan.</p>
       </section>
 
       <section class="articles-grid">

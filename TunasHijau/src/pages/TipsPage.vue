@@ -2,8 +2,8 @@
   <div class="tips-page">
     <section class="tips-hero">
       <div class="hero-content">
-        <h1>Tips Menjaga  Lingkungan</h1>
-        <p>Pelajari cara-cara praktis untuk menjaga kelestarian lingkungan dalam kehidupan sehari-hari</p>
+        <h1 class="text-slide-up">Tips Menjaga Lingkungan</h1>
+        <p class="text-fade">Kumpulan tips praktis sehari-hari untuk menjaga kelestarian alam dan mengurangi jejak ekologis.</p>
       </div>
     </section>
 
@@ -35,7 +35,7 @@
       </div>
     </section>
 
-    <!-- Quick Facts Section -->
+    
     <section class="facts-section">
       <div class="container">
         <h2>Fakta Lingkungan</h2>
