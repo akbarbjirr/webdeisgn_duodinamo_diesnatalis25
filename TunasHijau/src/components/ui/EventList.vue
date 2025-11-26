@@ -10,15 +10,7 @@
         class="event-card"
         :style="{ '--i': index }"
       >
-        <div class="event-image">
-          <img :src="getEventImage(event.image)" :alt="event.title" />
-        </div>
-        <div class="event-content">
-          <h3>{{ event.title }}</h3>
-          <p class="event-date">{{ formatDate(event.date) }}</p>
-          <p class="event-location">{{ event.location }}</p>
-          <p class="event-description">{{ event.description }}</p>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -33,22 +25,7 @@ interface Props {
 
 defineProps<Props>()
 
-const getEventImage = (imagePath?: string) => {
-  if (!imagePath) return '/images/event1.svg'
-  return imagePath.includes('.svg') || imagePath.includes('.jpg') ? imagePath : '/images/event1.svg'
-}
 
-const formatDate = (dateString?: string) => {
-  if (!dateString) return '-'
-  const d = new Date(dateString)
-  if (Number.isNaN(d.getTime())) return dateString
-  return d.toLocaleDateString('id-ID', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  })
-}
 </script>
 
 <style scoped>

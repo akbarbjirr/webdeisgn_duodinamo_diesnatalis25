@@ -27,13 +27,6 @@
       </div>
     </section>
 
-    <section class="upcoming-events">
-      <div class="container">
-        <h2>Kegiatan Mendatang</h2>
-        <EventList :events="upcomingEvents" />
-      </div>
-    </section>
-
    
     <section class="quick-tips">
       <div class="container">
@@ -73,13 +66,10 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
 import { useAppStore } from '@/stores/appStore'
-import EventList from '@/components/ui/EventList.vue'
 import TipCard from '@/components/ui/TipCard.vue'
-
 const appStore = useAppStore()
-const upcomingEvents = computed(() => appStore.upcomingEvents.slice(0, 3))
+
 </script>
 
 <style scoped>

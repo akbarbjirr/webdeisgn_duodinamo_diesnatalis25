@@ -9,7 +9,6 @@
         <li><router-link to="/about">Tentang</router-link></li>
         <li><router-link to="/education">Edukasi</router-link></li>
         <li><router-link to="/tips">Tips</router-link></li>
-        <li><router-link to="/events">Kegiatan</router-link></li>
         <li><router-link to="/articles">Artikel</router-link></li>
         <li><router-link to="/contact">Kontak</router-link></li>
       </ul>
