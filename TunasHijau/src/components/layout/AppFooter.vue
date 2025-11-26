@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 Tunas Hijau. All rights reserved.</p>
+      <p>&copy; 2025 Tunas Hijau. All rights reserved.</p>
     </div>
   </footer>
 </template>

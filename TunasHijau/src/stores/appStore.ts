@@ -8,17 +8,7 @@ export const useAppStore = defineStore('app', () => {
     return parts[0] || ''
   }
 
-  // provide an initial upcoming event using a date relative to now
-  const events = ref<Event[]>([
-    {
-      id: 1,
-      title: 'Penanaman Pohon Massal',
-      description: 'Aksi penanaman 1000 pohon di area perkotaan',
-      date: isoDate(new Date(Date.now() + 1000 * 60 * 60 * 24 * 30)),
-      location: 'Taman Kota Jakarta',
-      image: '/images/event1.svg'
-    }
-  ])
+
 
   const articles = ref<Article[]>([
     {
@@ -55,23 +45,15 @@ export const useAppStore = defineStore('app', () => {
     }
   ])
 
-  const addEvent = (event: Event) => {
-    events.value.push(event)
-  }
 
   const addArticle = (article: Article) => {
     articles.value.push(article)
   }
 
-  const upcomingEvents = computed(() => {
-    return events.value.filter(event => new Date(event.date) >= new Date())
-  })
+
 
   return {
-    events,
     articles,
-    addEvent,
     addArticle,
-    upcomingEvents
   }
 })

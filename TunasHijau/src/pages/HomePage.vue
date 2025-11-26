@@ -66,9 +66,7 @@
 </template>
 
 <script setup lang="ts">
-import { useAppStore } from '@/stores/appStore'
 import TipCard from '@/components/ui/TipCard.vue'
-const appStore = useAppStore()
 
 </script>
 
