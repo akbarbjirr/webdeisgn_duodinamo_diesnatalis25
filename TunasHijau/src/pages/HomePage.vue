@@ -92,6 +92,21 @@ import TipCard from '@/components/ui/TipCard.vue'
   border-radius: 12px;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1.5rem;
+    min-height: 350px;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 3rem 1rem;
+    min-height: 280px;
+  }
+}
+
 .hero::before {
   content: '';
   position: absolute;
@@ -119,6 +134,20 @@ import TipCard from '@/components/ui/TipCard.vue'
   text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
 .hero-content p {
   font-size: 1.1rem;
   margin-bottom: 2.5rem;
@@ -129,6 +158,21 @@ import TipCard from '@/components/ui/TipCard.vue'
   animation: fadeInUp 0.8s ease-out 0.4s both;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
   font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .hero-content p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-content p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
 }
 
 .cta-button {
@@ -181,6 +225,18 @@ import TipCard from '@/components/ui/TipCard.vue'
   background: #f5f5f5;
 }
 
+@media (max-width: 768px) {
+  .features {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .features {
+    padding: 2rem 1rem;
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -194,10 +250,38 @@ import TipCard from '@/components/ui/TipCard.vue'
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  .features h2 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .features h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 .feature-card {
@@ -210,6 +294,13 @@ import TipCard from '@/components/ui/TipCard.vue'
   border: 2px solid transparent;
   animation: slideUpFade 0.6s ease-out both;
   cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .feature-card {
+    padding: 1.5rem 1rem;
+    animation: none;
+  }
 }
 
 .feature-card:nth-child(1) {
@@ -237,10 +328,24 @@ import TipCard from '@/components/ui/TipCard.vue'
   font-weight: 700;
 }
 
+@media (max-width: 640px) {
+  .feature-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
 .feature-card p {
   color: var(--color-text-secondary);
   line-height: 1.6;
   font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .feature-card p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
 }
 
 .upcoming-events {
@@ -265,6 +370,20 @@ import TipCard from '@/components/ui/TipCard.vue'
   margin: 2rem 0;
 }
 
+@media (max-width: 768px) {
+  .quick-tips {
+    padding: 2.5rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .quick-tips {
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+  }
+}
+
 .quick-tips h2 {
   text-align: center;
   margin-bottom: 3rem;
@@ -273,11 +392,41 @@ import TipCard from '@/components/ui/TipCard.vue'
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  .quick-tips h2 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .quick-tips h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .tips-preview {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .tips-preview {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .tips-preview {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .tips-cta {
@@ -296,6 +445,13 @@ import TipCard from '@/components/ui/TipCard.vue'
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   box-shadow: 0 8px 20px rgba(46,125,50,0.3);
   letter-spacing: 0.5px;
+}
+
+@media (max-width: 640px) {
+  .tips-link {
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+  }
 }
 
 .tips-link:hover {

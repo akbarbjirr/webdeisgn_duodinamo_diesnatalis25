@@ -31,6 +31,12 @@
   animation: slideDown 0.5s ease-out;
 }
 
+@media (max-width: 640px) {
+  .app-header {
+    padding: 0.8rem 0;
+  }
+}
+
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -38,6 +44,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-container {
+    padding: 0 0.75rem;
+  }
 }
 
 @keyframes slideDown {
@@ -59,6 +77,20 @@
   text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .logo h1 {
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+  }
+}
+
 .logo h1:hover {
   transform: scale(1.05);
   text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
@@ -70,6 +102,20 @@
   gap: 2rem;
 }
 
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .nav-links a {
   color: white;
   text-decoration: none;
@@ -78,6 +124,20 @@
   padding-bottom: 0.5rem;
   transition: color 0.3s ease;
   letter-spacing: 0.5px;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-links a {
+    font-size: 0.7rem;
+    padding-bottom: 0.25rem;
+  }
 }
 
 .nav-links a::after {

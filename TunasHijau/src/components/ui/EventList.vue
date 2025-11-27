@@ -10,7 +10,15 @@
         class="event-card"
         :style="{ '--i': index }"
       >
-        
+        <div class="event-image" v-if="event.image">
+          <img :src="event.image" :alt="event.title" />
+        </div>
+        <div class="event-content">
+          <h3>{{ event.title }}</h3>
+          <div class="event-date">📅 {{ event.date }}</div>
+          <div class="event-location">📍 {{ event.location }}</div>
+          <p class="event-description">{{ event.description }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -35,8 +43,22 @@ defineProps<Props>()
 
 .events-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 .event-card {
@@ -49,6 +71,12 @@ defineProps<Props>()
   animation-delay: calc(var(--i, 0) * 80ms);
   border: 2px solid transparent;
   cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .event-card {
+    animation: none;
+  }
 }
 
 .event-card:hover {
@@ -66,6 +94,18 @@ defineProps<Props>()
   overflow: hidden;
   background: linear-gradient(135deg, #f0f4f0 0%, #e8f5e9 100%);
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .event-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 640px) {
+  .event-image {
+    height: 160px;
+  }
 }
 
 .event-image img {
@@ -92,6 +132,18 @@ defineProps<Props>()
   padding: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  .event-content {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .event-content {
+    padding: 1rem;
+  }
+}
+
 .event-content h3 {
   color: #1b5e20;
   margin-bottom: 0.75rem;
@@ -99,11 +151,25 @@ defineProps<Props>()
   line-height: 1.4;
 }
 
+@media (max-width: 640px) {
+  .event-content h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
 .event-date {
   color: #2e7d32;
   font-weight: 700;
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .event-date {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
 }
 
 .event-location {
@@ -115,14 +181,24 @@ defineProps<Props>()
   font-size: 0.9rem;
 }
 
-.event-location::before {
-  content: '📍';
+@media (max-width: 640px) {
+  .event-location {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+  }
 }
 
 .event-description {
   color: #888;
   line-height: 1.5;
   font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .event-description {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
 }
 
 .no-events {

@@ -1,14 +1,12 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-import type { Event, Article } from '@/types'
+import type { Article } from '@/types'
 
 export const useAppStore = defineStore('app', () => {
   const isoDate = (d: Date): string => {
     const parts = d.toISOString().split('T')
     return parts[0] || ''
   }
-
-
 
   const articles = ref<Article[]>([
     {
@@ -49,8 +47,6 @@ export const useAppStore = defineStore('app', () => {
   const addArticle = (article: Article) => {
     articles.value.push(article)
   }
-
-
 
   return {
     articles,
